@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="worknotebookModelStoreContainer" CdmEntityContainer="worknotebookEntities">
+    <EntitySetMapping Name="data">
+      <EntityTypeMapping TypeName="worknotebookModel.datum">
+        <MappingFragment StoreEntitySet="data">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ten" ColumnName="ten" />
+          <ScalarProperty Name="lienlac" ColumnName="lienlac" />
+          <ScalarProperty Name="mota" ColumnName="mota" />
+          <ScalarProperty Name="ord" ColumnName="ord" />
+          <ScalarProperty Name="giao" ColumnName="giao" />
+          <ScalarProperty Name="img" ColumnName="img" />
+          <ScalarProperty Name="tong" ColumnName="tong" />
+          <ScalarProperty Name="coc" ColumnName="coc" />
+          <ScalarProperty Name="path" ColumnName="path" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

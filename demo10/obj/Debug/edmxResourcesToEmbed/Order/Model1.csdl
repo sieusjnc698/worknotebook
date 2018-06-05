@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="worknotebookModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="datum">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ten" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="lienlac" Type="String" MaxLength="225" FixedLength="false" Unicode="true" />
+    <Property Name="mota" Type="String" MaxLength="225" FixedLength="false" Unicode="true" />
+    <Property Name="ord" Type="DateTime" Precision="0" />
+    <Property Name="giao" Type="DateTime" Precision="0" />
+    <Property Name="img" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="tong" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="coc" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="path" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="worknotebookEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="data" EntityType="Self.datum" />
+  </EntityContainer>
+</Schema>
